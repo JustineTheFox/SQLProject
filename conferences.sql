@@ -55,7 +55,6 @@ END //
 
 DELIMITER ;
 
--- przy dodawaniu kolejnego uczestnika konferencji (orderu) sprawdza czy jest miejsce na konferencji 
 
 DROP TRIGGER `conferenceMembers_before_insert`;
 DELIMITER //
@@ -104,7 +103,6 @@ CALL addConferenceMember (12, 7, 90);
 
 select * from conferenceMembers where conferenceID = 12
 and partcipantsID = 7;
-
 
   
 USE `szok`;
